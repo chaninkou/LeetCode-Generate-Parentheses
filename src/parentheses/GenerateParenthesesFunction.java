@@ -42,6 +42,7 @@ public class GenerateParenthesesFunction {
         return result;
     }
     
+    // dfs method
     private void dfs(List<String> result, int left, int right, int open, int n, StringBuilder sb){
     	// Don't run the code at the bottom if open is negative
         if(open < 0){
@@ -51,13 +52,15 @@ public class GenerateParenthesesFunction {
         // Base case, left and right should be the same length of n, and open should be 0
         if(left == n && right == n && open == 0){
             result.add(sb.toString());
+            
+            // finished
             return;
         }
         
         // Save the previous length so we could use it to remove later
         int previousLen = sb.length();
         
-        // left will make open + 1
+        // left will make open = open + 1
         if(left < n){
             sb.append('(');
             

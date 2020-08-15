@@ -1,4 +1,4 @@
-package parentheses;
+package leetcode22;
 
 
 public class Main {

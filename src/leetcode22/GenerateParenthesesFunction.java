@@ -1,4 +1,4 @@
-package parentheses;
+package leetcode22;
 
 import java.util.ArrayList;
 import java.util.List;

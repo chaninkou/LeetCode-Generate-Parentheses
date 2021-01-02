@@ -44,16 +44,15 @@ public class GenerateParenthesesFunction {
     
     // dfs method
     private void dfs(List<String> result, int left, int right, int open, int n, StringBuilder sb){
-    	// Don't run the code at the bottom if open is negative
+    	// if open is less than 0, its not perfect parentheses
         if(open < 0){
             return;
         }
         
-        // Base case, left and right should be the same length of n, and open should be 0
+        // Add to result if perfect parentheses
         if(left == n && right == n && open == 0){
             result.add(sb.toString());
             
-            // finished
             return;
         }
         

@@ -7,7 +7,7 @@ public class GenerateParenthesesFunction {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
         
-        // Instead of using templist, it will be an empty string
+        // Instead of using temp list, it will be an empty string
         backtrack(result, "", 0, 0, n);
         
         return result;

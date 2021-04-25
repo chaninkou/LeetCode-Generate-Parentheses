@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateParenthesesFunction {
+	// backtracking
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
         
